@@ -1,0 +1,9 @@
+loop<- function(v){
+    
+    for(i in v) {
+        
+    if_else(grepl(pattern = "^\\w+\\\t", x = raw[i]) == TRUE,if_else(grepl(pattern = "^\\d+\\\t", 
+    x =    raw[i]) == TRUE, print(paste0(raw[i], raw[i], collapse="")), "no match second element"), "something_else")
+
+    }
+}
